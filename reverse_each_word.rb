@@ -9,7 +9,7 @@
 
 def reverse_each_word(sentence)
   reversed_sentence = sentence.reverse
-  reversed_sentence.collect{|word| word.reverse }.join(" ") 
+  reversed_sentence.split.collect{|word| word.reverse }.join(" ") 
  
  
  # method that doesn't use collect 
