@@ -4,9 +4,11 @@
 # 
 # 1. need to split string into array
 # 2. Reverse each word in place in the array
-# 3. return reversed 
+# 3. return reversed string (rejoin array)
 
 def reverse_each_word(sentence)
-  
+  sentence.split do |word|
+    word.reverse
+  end
   
 end
