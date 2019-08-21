@@ -7,8 +7,12 @@
 # 3. return reversed string (rejoin array)
 
 def reverse_each_word(sentence)
-  sentence.split do |word|
+  reverse_array = sentence.split
+  
+  reverse_array do |word|
     word.reverse
   end
+  
+  reverse_array.join(" ")
   
 end
