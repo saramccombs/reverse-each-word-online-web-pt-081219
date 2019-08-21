@@ -8,7 +8,8 @@
 # 4. return reversed string via rejoining the array
 
 def reverse_each_word(sentence)
-  sentence.reverse.split.collect{|word| word.reverse }.join(" ") 
+  reversed_sentence = sentence.reverse.split
+  reversed_sentence.collect{|word| word.reverse }.join(" ") 
  
  
  # method that doesn't use collect 
